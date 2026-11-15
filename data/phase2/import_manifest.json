@@ -1,0 +1,13 @@
+{
+  "record_count": 28,
+  "source_files": {
+    "PSI-25": "psi25_bass_ii_curated.csv",
+    "PSI-69": "psi69_flex_curated.csv"
+  },
+  "file_sha256": {
+    "PSI-25": "5a8774fd89815bc8b2aad7a4c7f67beee4f7aec840ff65b7f3162f6bd89398e1",
+    "PSI-69": "f83fab956a9e20d7967468a6072e4b37dd7af2a8ade37966251ef8cd9b195c7f"
+  },
+  "method": "manual_transcription_official_PSI_table",
+  "note": "Integrity fingerprints of bundled curated CSVs; NOT proof of a direct NASA download or independent scientific verification."
+}

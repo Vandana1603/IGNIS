@@ -1,0 +1,150 @@
+{
+  "version": "1.0",
+  "scope": "25 BASS-II table rows and 3 FLEX rows; not complete investigation datasets",
+  "NASA_reference": "https://ntrs.nasa.gov/citations/20210011385",
+  "NASA_report_pdf": "https://ntrs.nasa.gov/api/citations/20210011385/downloads/TM-20210011385.pdf",
+  "NASA_PSI_BASS": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+  "NASA_PSI_FLEX": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+  "community_mirror": "https://raw.githubusercontent.com/Hekimovraiz/FIRE-X/main/Nasa_data/PSI-25_Experimental%20table_BASS-II.csv",
+  "scope_notice": "Extra BASS-II rows transcribed from a public table mirror; IDs and selected experimental fields manually checked against NASA/TM-20210011385 Appendix A. Full NASA-hosted PSI CSV was not downloaded, and no full independent transcription audit is claimed.",
+  "manual_review_status": "selected_fields_cross_checked_against_NASA_report",
+  "record_sources": {
+    "PSI-25-B1": {
+      "original_table": "NASA PSI-25 BASS-II experimental table",
+      "NASA_report": "NASA/TM-20210011385 Appendix A",
+      "status": "selected_fields_cross_checked"
+    },
+    "PSI-25-B2": {
+      "original_table": "NASA PSI-25 BASS-II experimental table",
+      "NASA_report": "NASA/TM-20210011385 Appendix A",
+      "status": "selected_fields_cross_checked"
+    },
+    "PSI-25-B3": {
+      "original_table": "NASA PSI-25 BASS-II experimental table",
+      "NASA_report": "NASA/TM-20210011385 Appendix A",
+      "status": "selected_fields_cross_checked"
+    },
+    "PSI-25-B4": {
+      "original_table": "NASA PSI-25 BASS-II experimental table",
+      "NASA_report": "NASA/TM-20210011385 Appendix A",
+      "status": "selected_fields_cross_checked"
+    },
+    "PSI-25-B5": {
+      "original_table": "NASA PSI-25 BASS-II experimental table",
+      "NASA_report": "NASA/TM-20210011385 Appendix A",
+      "status": "selected_fields_cross_checked"
+    },
+    "PSI-25-B6": {
+      "original_table": "NASA PSI-25 BASS-II experimental table",
+      "NASA_report": "NASA/TM-20210011385 Appendix A",
+      "status": "selected_fields_cross_checked"
+    },
+    "PSI-25-B7": {
+      "original_table": "NASA PSI-25 BASS-II experimental table",
+      "NASA_report": "NASA/TM-20210011385 Appendix A",
+      "status": "selected_fields_cross_checked"
+    },
+    "PSI-25-B8": {
+      "original_table": "NASA PSI-25 BASS-II experimental table",
+      "NASA_report": "NASA/TM-20210011385 Appendix A",
+      "status": "selected_fields_cross_checked"
+    },
+    "PSI-25-B9": {
+      "original_table": "NASA PSI-25 BASS-II experimental table",
+      "NASA_report": "NASA/TM-20210011385 Appendix A",
+      "status": "selected_fields_cross_checked"
+    },
+    "PSI-25-B10": {
+      "original_table": "NASA PSI-25 BASS-II experimental table",
+      "NASA_report": "NASA/TM-20210011385 Appendix A",
+      "status": "selected_fields_cross_checked"
+    },
+    "PSI-25-B11": {
+      "original_table": "NASA PSI-25 BASS-II experimental table",
+      "NASA_report": "NASA/TM-20210011385 Appendix A",
+      "status": "selected_fields_cross_checked"
+    },
+    "PSI-25-B12": {
+      "original_table": "NASA PSI-25 BASS-II experimental table",
+      "NASA_report": "NASA/TM-20210011385 Appendix A",
+      "status": "selected_fields_cross_checked"
+    },
+    "PSI-25-B13": {
+      "original_table": "NASA PSI-25 BASS-II experimental table",
+      "NASA_report": "NASA/TM-20210011385 Appendix A",
+      "status": "selected_fields_cross_checked"
+    },
+    "PSI-25-B14": {
+      "original_table": "NASA PSI-25 BASS-II experimental table",
+      "NASA_report": "NASA/TM-20210011385 Appendix A",
+      "status": "selected_fields_cross_checked"
+    },
+    "PSI-25-B15": {
+      "original_table": "NASA PSI-25 BASS-II experimental table",
+      "NASA_report": "NASA/TM-20210011385 Appendix A",
+      "status": "selected_fields_cross_checked"
+    },
+    "PSI-25-B16": {
+      "original_table": "NASA PSI-25 BASS-II experimental table",
+      "NASA_report": "NASA/TM-20210011385 Appendix A",
+      "status": "selected_fields_cross_checked"
+    },
+    "PSI-25-B17": {
+      "original_table": "NASA PSI-25 BASS-II experimental table",
+      "NASA_report": "NASA/TM-20210011385 Appendix A",
+      "status": "selected_fields_cross_checked"
+    },
+    "PSI-25-B18": {
+      "original_table": "NASA PSI-25 BASS-II experimental table",
+      "NASA_report": "NASA/TM-20210011385 Appendix A",
+      "status": "selected_fields_cross_checked"
+    },
+    "PSI-25-B19": {
+      "original_table": "NASA PSI-25 BASS-II experimental table",
+      "NASA_report": "NASA/TM-20210011385 Appendix A",
+      "status": "selected_fields_cross_checked"
+    },
+    "PSI-25-B20": {
+      "original_table": "NASA PSI-25 BASS-II experimental table",
+      "NASA_report": "NASA/TM-20210011385 Appendix A",
+      "status": "selected_fields_cross_checked"
+    },
+    "PSI-25-B21": {
+      "original_table": "NASA PSI-25 BASS-II experimental table",
+      "NASA_report": "NASA/TM-20210011385 Appendix A",
+      "status": "selected_fields_cross_checked"
+    },
+    "PSI-25-B22": {
+      "original_table": "NASA PSI-25 BASS-II experimental table",
+      "NASA_report": "NASA/TM-20210011385 Appendix A",
+      "status": "selected_fields_cross_checked"
+    },
+    "PSI-25-F1": {
+      "original_table": "NASA PSI-25 BASS-II experimental table",
+      "NASA_report": "NASA/TM-20210011385 Appendix A",
+      "status": "selected_fields_cross_checked"
+    },
+    "PSI-25-F2": {
+      "original_table": "NASA PSI-25 BASS-II experimental table",
+      "NASA_report": "NASA/TM-20210011385 Appendix A",
+      "status": "selected_fields_cross_checked"
+    },
+    "PSI-25-F3": {
+      "original_table": "NASA PSI-25 BASS-II experimental table",
+      "NASA_report": "NASA/TM-20210011385 Appendix A",
+      "status": "selected_fields_cross_checked"
+    },
+    "PSI-69-20CAL08": {
+      "original_table": "NASA PSI-69 FLEX experimental table",
+      "status": "original_curated_subset_no_independent_reverification"
+    },
+    "PSI-69-20CAL10": {
+      "original_table": "NASA PSI-69 FLEX experimental table",
+      "status": "original_curated_subset_no_independent_reverification"
+    },
+    "PSI-69-20CAL12": {
+      "original_table": "NASA PSI-69 FLEX experimental table",
+      "status": "original_curated_subset_no_independent_reverification"
+    }
+  }
+}
