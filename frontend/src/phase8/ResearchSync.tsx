@@ -113,7 +113,7 @@ export function ResearchSync() {
     <details className="ignite-sync-details ignite-sync-workflow"><summary>How source checks become validated evidence</summary>
     <Panel title="Research-to-evidence workflow" description="How the official archive connects to the data that IGNIS can scientifically demonstrate.">
       <div className="phase8-workflow"><span><Satellite/> Official NASA source</span><span><CloudDownload/> Explicit staging</span><span><ShieldCheck/> Manual validation</span><span><Database/> Curated experiments</span></div>
-      <p className="phase8-explain">Staging is a genuine remote-file download when a suitable link exists. Promoting staged files into the scientific catalog would require a separate investigation-specific parser, source validation, deduplication and review. Until then, only the locally curated and imported records are used for charts, comparisons and SI answers.</p>
+      <p className="phase8-explain">Staging is a genuine remote-file download when a suitable link exists. Promoting staged files into the scientific catalog would require a separate investigation-specific parser, source validation, deduplication and review. Until then, the six original records remain the sole source for charts, comparisons and SI answers.</p>
       <Link to="/laboratory" className="button button-primary">Explore documented laboratory setups <ExternalLink size={15}/></Link>
     </Panel>
     </details>

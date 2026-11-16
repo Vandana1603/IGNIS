@@ -1,0 +1,9 @@
+{
+  "data/experiments.json": "d9163d874acf3f2987f4d52821f2dfb8c7a95473603f039c99e0b2102a306482",
+  "data/phase2/experiments.json": "4b8cb8ac0485da18a7ddf332574776875bd05e68445c348a40c7c29bcd7dcbcf",
+  "data/phase2/import_manifest.json": "e8b24c29938ddda1be5a6ec64d1ddbff39975379fcf225411d1139a78b572a72",
+  "data/phase2/raw/psi25_bass_ii_curated.csv": "6d590fd402ed69800c6fcd92dd6a2b6d3656bc427d7566435ca2f6aa2c75ceab",
+  "data/phase2/raw/psi69_flex_curated.csv": "f83fab956a9e20d7967468a6072e4b37dd7af2a8ade37966251ef8cd9b195c7f",
+  "data/phase2/sources.json": "94719c4981aa54e9af52ddbee9a3134f209e2b8bd429ea2ca3f33dd1ad570560",
+  "data/sources.json": "e73bdf3fa0e38d9e89a304d65a8c802a15051e635f8763258e6e8250243b7f8f"
+}

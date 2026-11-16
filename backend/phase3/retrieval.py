@@ -40,7 +40,7 @@ WEIGHTS = {
 LABEL_ONLY_FACTOR = 0.55
 METHOD = "field_weighted_idf_v1"
 PROVENANCE = (
-    "These are local transcriptions of selected NASA PSI table cells. Expanded BASS-II rows were cross-checked against selected NASA technical-report fields; full transcription verification was not performed. Source URLs and DOIs "
+    "These are local transcriptions of selected NASA PSI table cells. Source URLs and DOIs "
     "identify the originating investigation; local SHA-256 fingerprints detect changes, "
     "but do not independently certify NASA measurements. No NASA data is downloaded by search."
 )

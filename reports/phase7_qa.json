@@ -1,0 +1,113 @@
+{
+  "generated_at_utc": "2026-11-14T10:39:31.812121+00:00",
+  "automated_status": "failed",
+  "environment": {
+    "python": "3.11.9",
+    "os": "Windows-10-10.0.26200-SP0"
+  },
+  "checks": [
+    {
+      "name": "Complete Python test suite",
+      "status": "passed",
+      "exit_code": 0,
+      "command": [
+        "C:\\NASA\\IGNIS\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "tests"
+      ],
+      "working_directory": ".",
+      "output_tail": "........................................................................ [ 74%]\n.........................                                                [100%]\n============================== warnings summary ===============================\n.venv\\Lib\\site-packages\\fastapi\\testclient.py:1\n  C:\\NASA\\IGNIS\\.venv\\Lib\\site-packages\\fastapi\\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n97 passed, 1 warning in 2.14s\n"
+    },
+    {
+      "name": "Python dependency consistency",
+      "status": "passed",
+      "exit_code": 0,
+      "command": [
+        "C:\\NASA\\IGNIS\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "working_directory": ".",
+      "output_tail": "No broken requirements found.\n"
+    },
+    {
+      "name": "Frontend TypeScript",
+      "status": "passed",
+      "exit_code": 0,
+      "command": [
+        "npm.cmd",
+        "run",
+        "typecheck"
+      ],
+      "working_directory": "frontend",
+      "output_tail": "\n> ignis-research-console@0.4.0 typecheck\n> tsc -b\n\n"
+    },
+    {
+      "name": "Frontend unit tests",
+      "status": "failed",
+      "exit_code": 1,
+      "command": [
+        "npm.cmd",
+        "run",
+        "test"
+      ],
+      "working_directory": "frontend",
+      "output_tail": "\n> ignis-research-console@0.4.0 test\n> vitest run\n\n\n\u001b[1m\u001b[46m RUN \u001b[49m\u001b[22m \u001b[36mv3.2.7 \u001b[39m\u001b[90mC:/NASA/IGNIS/frontend\u001b[39m\n\n \u001b[32m✓\u001b[39m tests/phase6.test.ts \u001b[2m(\u001b[22m\u001b[2m7 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 8\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/phase5.test.ts \u001b[2m(\u001b[22m\u001b[2m9 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 8\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/science.test.ts \u001b[2m(\u001b[22m\u001b[2m6 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 106\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[31m1 failed\u001b[39m\u001b[22m\u001b[2m | \u001b[22m\u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m22 passed\u001b[39m\u001b[22m\u001b[90m (22)\u001b[39m\n\u001b[2m   Start at \u001b[22m 16:09:18\n\u001b[2m   Duration \u001b[22m 1.38s\u001b[2m (transform 316ms, setup 0ms, collect 407ms, tests 122ms, environment 1ms, prepare 1.18s)\u001b[22m\n\n\n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m e2e/ignis.spec.ts\u001b[2m [ e2e/ignis.spec.ts ]\u001b[22m\n\u001b[31m\u001b[1mError\u001b[22m: Playwright Test did not expect test() to be called here.\nMost common reasons include:\n- You are calling test() in a configuration file.\n- You are calling test() in a file that is imported by the configuration file.\n- You have two different versions of @playwright/test. This usually happens\n  when one of the dependencies in your package.json depends on @playwright/test.\n- You are calling test() from an async test.describe() block. Only sync ones are supported.\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m _TestTypeImpl._currentSuite ../node_modules/playwright/lib/common/index.js:\u001b[2m2313:13\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m _TestTypeImpl._createTest ../node_modules/playwright/lib/common/index.js:\u001b[2m2327:24\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m ../node_modules/playwright/lib/common/index.js:\u001b[2m1229:12\u001b[22m\u001b[39m\n\u001b[36m \u001b[2m❯\u001b[22m e2e/ignis.spec.ts:\u001b[2m6:1\u001b[22m\u001b[39m\n    \u001b[90m  4| \u001b[39m\u001b[35mimport\u001b[39m { expect\u001b[33m,\u001b[39m test } \u001b[35mfrom\u001b[39m \u001b[32m'@playwright/test'\u001b[39m\u001b[33m;\u001b[39m\n    \u001b[90m  5| \u001b[39m\n    \u001b[90m  6| \u001b[39mtest('mission overview loads the real local catalog', async ({ page })…\n    \u001b[90m   | \u001b[39m\u001b[31m^\u001b[39m\n    \u001b[90m  7| \u001b[39m  \u001b[35mawait\u001b[39m page\u001b[33m.\u001b[39m\u001b[34mgoto\u001b[39m(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m  8| \u001b[39m  \u001b[35mawait\u001b[39m \u001b[34mexpect\u001b[39m(page\u001b[33m.\u001b[39m\u001b[34mgetByText\u001b[39m(\u001b[32m'NASA catalog connected'\u001b[39m))\u001b[33m.\u001b[39m\u001b[34mtoBeVisible\u001b[39m()\u001b[33m;\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n"
+    },
+    {
+      "name": "Frontend production build",
+      "status": "passed",
+      "exit_code": 0,
+      "command": [
+        "npm.cmd",
+        "run",
+        "build"
+      ],
+      "working_directory": "frontend",
+      "output_tail": "\n> ignis-research-console@0.4.0 build\n> tsc -b && vite build\n\n\u001b[36mvite v6.4.6 \u001b[32mbuilding for production...\u001b[36m\u001b[39m\ntransforming...\n\u001b[32m✓\u001b[39m 2029 modules transformed.\nrendering chunks...\ncomputing gzip size...\n\u001b[2mdist/\u001b[22m\u001b[32mindex.html                 \u001b[39m\u001b[1m\u001b[2m  0.59 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   0.35 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[35massets/index-DfltGuuF.css  \u001b[39m\u001b[1m\u001b[2m 38.71 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   9.72 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[36massets/index-DOmb_s3P.js   \u001b[39m\u001b[1m\u001b[33m735.28 kB\u001b[39m\u001b[22m\u001b[2m │ gzip: 214.00 kB\u001b[22m\n\u001b[32m✓ built in 6.96s\u001b[39m\n\u001b[33m\n(!) Some chunks are larger than 500 kB after minification. Consider:\n- Using dynamic import() to code-split the application\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001b[39m\n"
+    },
+    {
+      "name": "Live API E2E contract",
+      "status": "passed",
+      "exit_code": 0,
+      "command": [
+        "node.exe",
+        "scripts/verify-phase7.mjs"
+      ],
+      "working_directory": "frontend",
+      "output_tail": "PASS 01: Readiness and provenance are explicit\nPASS 02: API nosniff header is present\nPASS 03: API no-store cache header is present\nPASS 04: Six starter record IDs are present in the actual imported catalog\nPASS 05: Readiness count equals catalog length\nPASS 06: Research index matches imported catalog\nPASS 07: Strict original-value search excludes disruption test\nPASS 08: Search evidence equals raw imported source field\nPASS 09: Passport distinguishes local hashes from independent NASA verification\nPASS 10: Exact evidence ID resolves through field-level audit\nPASS 11: Cross-investigation numeric comparison is blocked\nPASS 12: Same-investigation comparison is descriptive only\nPASS 13: SI answer cites the same exact original evidence ID\nPASS 14: All SI claims resolve to returned evidence\nPASS 15: Safety recommendation request abstains without fabricated citations\nPASS 16: Unknown evidence passport returns 404\nPASS 17: Invalid scientific question returns 422\nSUCCESS: 17 live API end-to-end checks passed; no NASA data were modified.\n"
+    },
+    {
+      "name": "Chromium browser E2E",
+      "status": "failed",
+      "exit_code": null,
+      "output_tail": "Playwright not installed; run npm install -D @playwright/test then npx playwright install chromium"
+    },
+    {
+      "name": "NASA input files unchanged",
+      "status": "passed",
+      "output_tail": "SHA-256 fingerprints identical"
+    }
+  ],
+  "input_files_unchanged": true,
+  "input_sha256_before": {
+    "data/phase2/experiments.json": "4b8cb8ac0485da18a7ddf332574776875bd05e68445c348a40c7c29bcd7dcbcf",
+    "data/phase2/import_manifest.json": "e8b24c29938ddda1be5a6ec64d1ddbff39975379fcf225411d1139a78b572a72",
+    "data/phase2/raw/psi25_bass_ii_curated.csv": "6d590fd402ed69800c6fcd92dd6a2b6d3656bc427d7566435ca2f6aa2c75ceab",
+    "data/phase2/raw/psi69_flex_curated.csv": "f83fab956a9e20d7967468a6072e4b37dd7af2a8ade37966251ef8cd9b195c7f",
+    "data/phase2/sources.json": "94719c4981aa54e9af52ddbee9a3134f209e2b8bd429ea2ca3f33dd1ad570560"
+  },
+  "input_sha256_after": {
+    "data/phase2/experiments.json": "4b8cb8ac0485da18a7ddf332574776875bd05e68445c348a40c7c29bcd7dcbcf",
+    "data/phase2/import_manifest.json": "e8b24c29938ddda1be5a6ec64d1ddbff39975379fcf225411d1139a78b572a72",
+    "data/phase2/raw/psi25_bass_ii_curated.csv": "6d590fd402ed69800c6fcd92dd6a2b6d3656bc427d7566435ca2f6aa2c75ceab",
+    "data/phase2/raw/psi69_flex_curated.csv": "f83fab956a9e20d7967468a6072e4b37dd7af2a8ade37966251ef8cd9b195c7f",
+    "data/phase2/sources.json": "94719c4981aa54e9af52ddbee9a3134f209e2b8bd429ea2ca3f33dd1ad570560"
+  },
+  "independent_nasa_verification": "not_performed",
+  "public_deployment_verified": false,
+  "manual_review_completed": false
+}

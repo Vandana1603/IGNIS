@@ -39,7 +39,7 @@ def test_status_reports_imported_rows_not_nasa_totals(client):
     response = client.get("/v3/index-status")
     assert response.status_code == 200
     body = response.json()
-    assert body["indexed_record_count"] == len(get_records()) >= 6
+    assert body["indexed_record_count"] == len(get_records()) == 6
     assert body["investigations"] == ["PSI-25", "PSI-69"]
     assert body["source_method"] == "manual_transcription_official_PSI_table"
     assert set(body["source_file_sha256"]) == {"PSI-25", "PSI-69"}
@@ -82,7 +82,7 @@ def test_outcome_filter_uses_reported_test_end(client):
 def test_investigation_filter_and_original_material(client):
     response = client.post("/v3/search", json={"query": "pmma", "investigation": "PSI-25"})
     assert response.status_code == 200
-    assert {"PSI-25-B1", "PSI-25-B10"}.issubset({r["record_id"] for r in response.json()["results"]})
+    assert {r["record_id"] for r in response.json()["results"]} == {"PSI-25-B1", "PSI-25-B4"}
     assert all(r["source_id"] == "PSI-25" for r in response.json()["results"])
 
 

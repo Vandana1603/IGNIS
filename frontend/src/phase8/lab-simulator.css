@@ -1,0 +1,105 @@
+/* IGNIS 2.2: compact, evidence-linked qualitative laboratory. No global overrides. */
+.ignis-lab-v2 { gap: 17px; }
+.ignis-lab-intro { display:flex; align-items:center; justify-content:space-between; gap:24px; }
+.ignis-lab-intro h1 { font:600 clamp(29px,3.6vw,45px)/1.13 'Space Grotesk',sans-serif; letter-spacing:-.045em; margin:9px 0; color:#eafaff; }
+.ignis-lab-intro p { color:#97b3c3; margin:0; font-size:12px; line-height:1.6; }
+.ignis-lab-toplink { color:#8bdfe8; display:flex; align-items:center; gap:9px; font-size:12px; white-space:nowrap; }
+.ignis-lab-controls { display:flex; align-items:center; justify-content:space-between; gap:16px; border:1px solid #25485b; background:#0d2638; padding:13px; border-radius:14px; }
+.ignis-lab-fuel-switch { display:flex; gap:8px; flex:1; }
+.ignis-lab-fuel-switch button { display:flex; text-align:left; align-items:center; gap:15px; padding:13px 16px; flex:1; border-radius:10px; background:#10283a; color:#b7d2df; border:1px solid #2d4d62; min-width:0; }
+.ignis-lab-fuel-switch button.active { background:linear-gradient(120deg,#124355,#143545);border-color:#6dcfda;box-shadow:inset 0 0 0 1px #356c77; }
+.ignis-lab-fuel-switch button:focus-visible,.ignis-lab-player button:focus-visible,.ignis-lab-focus-tabs button:focus-visible {outline:2px solid #92ecf3;outline-offset:3px;}
+.ignis-lab-fuel-switch button span:nth-child(2) { display:grid;gap:4px; }
+.ignis-lab-fuel-switch button strong {font-size:13px;color:#eaf9fc;}
+.ignis-lab-fuel-switch button small {font-size:10px;color:#9bb9c8;line-height:1.4;}
+.ignis-lab-fuel-number { display:grid; place-items:center; flex:0 0 30px; width:30px;height:30px; border:1px solid #3e7588;border-radius:8px;color:#8cdce6;font:700 11px 'Space Grotesk',sans-serif; }
+.ignis-lab-choose-test {display:grid;gap:6px;min-width:280px;max-width:370px;flex:.85;}
+.ignis-lab-choose-test label {color:#8fb9c8;font-size:10px;letter-spacing:.1em;font-weight:700;}
+.ignis-lab-choose-test select {width:100%;min-width:0;border:1px solid #3c657c;background:#0b2133;border-radius:8px;padding:9px 12px;color:#e8f7fd;font-size:12px;}
+.ignis-lab-choose-test>span {color:#7498ac;font-size:10px;}
+.ignis-lab-choose-test>span a {color:#8ddbe6;}
+.ignis-lab-main {display:grid;grid-template-columns:minmax(0,1.65fr) minmax(315px,.92fr);gap:15px;align-items:stretch;}
+.ignis-lab-view,.ignis-lab-record-panel {min-width:0;border:1px solid #25465c;border-radius:15px;background:#0b2234;padding:16px;}
+.ignis-lab-view-top {display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:11px;color:#88aaba;font-size:10px;}
+.ignis-lab-overline {letter-spacing:.14em;color:#9de5e9;font-size:10px;font-weight:750;}
+.ignis-lab-stage {position:relative;overflow:hidden;border:1px solid #1d475f;border-radius:12px;background:#081b2b;}
+.ignis-lab-scene {width:100%;height:auto;display:block;border-radius:0;box-shadow:none;}
+.ignis-lab-scene-tag {fill:#84d9e6;font-size:12px;font-weight:750;letter-spacing:1.4px;}
+.ignis-lab-scene-meta {fill:#60879d;font-size:10px;letter-spacing:.8px;}
+.ignis-lab-scene-note {fill:#729db0;font-size:11px;letter-spacing:1px;}
+.ignis-lab-label {fill:#b1d4e0;font-size:11px;letter-spacing:.5px;}
+.ignis-lab-hotspot {cursor:pointer;transition:filter .2s ease;}
+.ignis-lab-hotspot:hover,.ignis-lab-hotspot.selected {filter:drop-shadow(0 0 8px #74d6e471);}
+.ignis-lab-hotspot:focus {outline:none;filter:drop-shadow(0 0 8px #a2efff);}
+.ignis-gas-particle {opacity:.45;}
+.ignis-gas-particle.tone-cyan {fill:#71daed;}
+.ignis-gas-particle.tone-blue {fill:#8aaec6;}
+.ignis-lab-stage.is-playing .ignis-gas-particle {animation:ignis-lab-liquid-gas var(--ignis-duration,4s) ease-in-out infinite alternate;animation-duration:inherit;}
+/* Using CSS animation-duration inline on each SVG particle via React */
+.ignis-lab-stage.is-playing.is-liquid .ignis-gas-particle {animation-name:ignis-lab-liquid-gas;}
+.ignis-lab-stage.is-playing.is-solid .ignis-gas-particle {animation-name:ignis-lab-solid-gas;}
+.ignis-lab-stage.is-playing .ignis-lab-flame-ring {transform-origin:390px 236px;animation:ignis-lab-breathe 2.4s ease-in-out infinite alternate;}
+.ignis-lab-stage.is-playing .ignis-lab-halo {animation:ignis-lab-glow 2.2s ease-in-out infinite alternate;}
+.ignis-lab-stage.is-playing .ignis-lab-solid-flame {animation:ignis-lab-flicker 1.6s ease-in-out infinite alternate;transform-origin:410px 270px;}
+.ignis-lab-stage.is-playing .ignis-lab-fan {animation:ignis-lab-spin 2.4s linear infinite; transform-origin:170px 227px;}
+.ignis-lab-stage.is-playing .ignis-lab-streamlines {animation:ignis-lab-stream 1.2s linear infinite;}
+@keyframes ignis-lab-liquid-gas {from{transform:translate(-2px,2px);opacity:.28}to{transform:translate(7px,-6px);opacity:.67}}
+@keyframes ignis-lab-solid-gas {from{transform:translate(-8px,1px);opacity:.24}to{transform:translate(12px,-1px);opacity:.7}}
+@keyframes ignis-lab-breathe {to{transform:scale(1.045);opacity:.79}}
+@keyframes ignis-lab-glow {to{opacity:.48}}
+@keyframes ignis-lab-flicker {to{transform:skewX(4deg);opacity:.74}}
+@keyframes ignis-lab-spin {to{transform:rotate(360deg)}}
+@keyframes ignis-lab-stream {to{stroke-dashoffset:-13}}
+.ignis-lab-timeline {height:3px;background:#17374a;}
+.ignis-lab-timeline span {height:100%;display:block;background:#81e2e5;transition:width .1s linear;}
+.ignis-lab-player {display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:13px;flex-wrap:wrap;}
+.ignis-lab-player-buttons {display:flex;gap:8px;align-items:center;}
+.ignis-lab-player button {display:inline-flex;align-items:center;gap:7px;border:1px solid #355467;color:#b8d4e0;background:#102e41;padding:9px 12px;border-radius:8px;font-size:11px;}
+.ignis-lab-player .ignis-lab-play {background:#185668;border-color:#4fbdce;color:#e6fbff;font-weight:700;}
+.ignis-lab-particle-toggle {display:flex;align-items:center;gap:8px;color:#aac7d5;font-size:11px;cursor:pointer;}
+.ignis-lab-particle-toggle input {accent-color:#55cad5;}
+.ignis-lab-quiet-note {font-size:10px;line-height:1.55;color:#83a6b7;margin:10px 0 0;}
+.ignis-lab-focus-tabs {display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:13px;}
+.ignis-lab-focus-tabs button {display:flex;gap:7px;align-items:center;justify-content:center;border:1px solid #2c5066;border-radius:8px;background:#102a3d;color:#93b7c7;padding:10px 6px;font-size:11px;}
+.ignis-lab-focus-tabs button.active {border-color:#69d0dc;background:#194658;color:#e9feff;}
+.ignis-lab-record-panel {display:flex;flex-direction:column;gap:13px;}
+.ignis-lab-record-head {display:flex;justify-content:space-between;align-items:center;gap:10px;}
+.ignis-lab-record-head>strong {font:600 17px 'Space Grotesk',sans-serif;color:#e5f5fb;}
+.ignis-lab-record-description {font-size:11px;line-height:1.7;color:#9eb9ca;margin:0;}
+.ignis-lab-mini-metrics {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;}
+.ignis-lab-mini-metrics>div {padding:11px;border-radius:9px;background:#112f41;border:1px solid #2b5367;display:grid;gap:10px;}
+.ignis-lab-mini-metrics span {color:#8eb3c5;font-size:10px;line-height:1.45;}
+.ignis-lab-mini-metrics strong {color:#edfafd;font:600 clamp(15px,1.6vw,20px) 'Space Grotesk',sans-serif;}
+.ignis-lab-outcome {display:inline-flex;align-self:flex-start;max-width:100%;border-radius:30px;padding:7px 11px;border:1px solid #386c71;background:#133c47;color:#b4e9e5;font-size:10px;line-height:1.4;margin:0;}
+.ignis-lab-record-fields {display:grid;gap:8px;}
+.ignis-lab-record-fields h3 {color:#b7d3df;font-size:11px;margin:0;font-weight:700;}
+.ignis-lab-evidence-list {display:grid;gap:7px;max-height:250px;overflow:auto;}
+.ignis-lab-evidence-row {display:grid;gap:5px;border:1px solid #23475c;border-radius:8px;padding:9px 10px;background:#0c293b;}
+.ignis-lab-evidence-row>span {font-size:10px;color:#8da9b9;}
+.ignis-lab-evidence-row>strong {font-size:12px;color:#e3f3fa;overflow-wrap:anywhere;}
+.ignis-lab-evidence-row details {font-size:10px;color:#91d1dc;}
+.ignis-lab-evidence-row details summary {cursor:pointer;}
+.ignis-lab-evidence-row details code {display:block;margin:5px 0;color:#89cbd7;overflow-wrap:anywhere;font-size:10px;}
+.ignis-lab-source-links {display:grid;justify-items:start;gap:8px;margin-top:auto;padding-top:8px;}
+.ignis-lab-source-links .button {white-space:normal;text-align:left;}
+.ignis-lab-source-links a:not(.button) {display:flex;align-items:center;gap:6px;font-size:11px;color:#8fdae3;}
+.ignis-lab-source-links>span {color:#789bb0;font-size:10px;}
+.ignis-lab-muted {font-size:11px;color:#91aebf;margin:0;}
+.ignis-lab-lower {display:grid;grid-template-columns:1fr 1fr;gap:15px;align-items:stretch;}
+.ignis-lab-chart-details,.ignis-lab-value {background:#0d2537;border:1px solid #24465a;border-radius:12px;min-width:0;}
+.ignis-lab-chart-details>summary {display:flex;gap:12px;align-items:center;padding:19px;cursor:pointer;list-style:none;color:#93e2e7;}
+.ignis-lab-chart-details>summary::-webkit-details-marker {display:none;}
+.ignis-lab-chart-details>summary span {display:grid;gap:5px;flex:1;}
+.ignis-lab-chart-details>summary strong {font-size:13px;color:#e7f8fc;}
+.ignis-lab-chart-details>summary small {font-size:10px;color:#88aaba;}
+.ignis-lab-chart-details[open]>summary>svg:last-child {transform:rotate(180deg);}
+.ignis-lab-chart-content {padding:0 18px 17px;display:grid;gap:10px;}
+.ignis-lab-chart-content>a {display:inline-flex;align-items:center;gap:7px;color:#8fe4ea;font-size:11px;}
+.ignis-lab-value {padding:19px;display:grid;gap:9px;align-content:center;}
+.ignis-lab-value p {font-size:11px;line-height:1.8;color:#a4c0cd;margin:0;}
+.ignis-lab-value p strong {color:#d7eefa;}
+.ignis-lab-footer-note {font-size:10px;color:#819eaf;line-height:1.7;margin:0;max-width:1000px;}
+@media(max-width:1110px){.ignis-lab-main{grid-template-columns:1fr}.ignis-lab-controls{flex-wrap:wrap}.ignis-lab-choose-test{max-width:none;flex:1;min-width:min(100%,300px)}}
+@media(max-width:760px){.ignis-lab-intro{align-items:flex-start;flex-direction:column;gap:10px}.ignis-lab-main{gap:12px}.ignis-lab-controls{padding:10px}.ignis-lab-fuel-switch{width:100%}.ignis-lab-choose-test{width:100%;flex:auto}.ignis-lab-lower{grid-template-columns:1fr}.ignis-lab-view,.ignis-lab-record-panel{padding:12px}}
+@media(max-width:480px){.ignis-lab-fuel-switch button{padding:10px 7px;gap:7px}.ignis-lab-fuel-number{display:none}.ignis-lab-fuel-switch button strong{font-size:12px}.ignis-lab-fuel-switch button small{font-size:9px}.ignis-lab-intro h1{font-size:32px}.ignis-lab-mini-metrics{grid-template-columns:1fr 1fr}.ignis-lab-player{align-items:flex-start}.ignis-lab-focus-tabs button{font-size:10px}.ignis-lab-scene-tag{font-size:13px}}
+@media(prefers-reduced-motion:reduce){.ignis-lab-stage.is-playing *{animation:none!important}.ignis-lab-timeline span{transition:none}}

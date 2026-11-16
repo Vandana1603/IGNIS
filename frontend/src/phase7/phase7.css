@@ -1,0 +1,7 @@
+.p7-error { display:flex; align-items:flex-start; gap:16px; border:1px solid #a86c56; background:#30282a; color:#f9d8ca; border-radius:14px; padding:24px; }
+.p7-error h2 { margin:0 0 9px; font-size:19px; }
+.p7-error p { line-height:1.6; margin:0 0 16px; }
+.p7-error button { display:inline-flex; align-items:center; gap:8px; border:1px solid #c3917c; background:#583a38; color:#fff3ec; padding:10px 14px; border-radius:9px; cursor:pointer; }
+.p7-error button:focus-visible { outline:3px solid #a4efff; outline-offset:3px; }
+.p5-hashes code, .p5-trace code, .p6-citation code, .hash { overflow-wrap:anywhere; word-break:break-word; }
+@media (prefers-reduced-motion: reduce) { .app-shell *, .app-shell *::before, .app-shell *::after { animation-duration:0.01ms !important; transition-duration:0.01ms !important; scroll-behavior:auto !important; } }

@@ -113,6 +113,3 @@ install_security(app)
 
 from backend.phase8.routes import router as phase8_router
 app.include_router(phase8_router)
-
-from backend.phase10.routes import router as phase10_router
-app.include_router(phase10_router)

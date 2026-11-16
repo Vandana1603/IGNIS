@@ -16,7 +16,7 @@ from backend.phase6.models import AskRequest, AskResponse, EvidenceReference, Gr
 
 METHOD = "deterministic_evidence_rules_v1"
 PROVENANCE_NOTICE = (
-    "Imported rows are locally curated transcriptions of NASA PSI tables. "
+    "The six starter rows are locally curated transcriptions of NASA PSI tables. "
     "Evidence IDs and SHA-256 checks establish local traceability, not independent NASA verification."
 )
 LIMITATIONS = [

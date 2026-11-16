@@ -1,0 +1,28 @@
+{
+  "PSI-25": {
+    "last_checked_utc": "2026-11-15T05:26:57+00:00",
+    "state": "online",
+    "http_status": 200,
+    "page_sha256": "7a8d90c1470862373738d0f512449a24830eb82dede77d4f751178e86a877a92",
+    "changed_since_last_successful_check": true,
+    "etag": "W/\"981-1794447238000\"",
+    "last_modified": "Thu, 12 Nov 2026 01:33:58 GMT",
+    "latest_version_visible": null,
+    "updated_date_visible": null,
+    "discoverable_files": [],
+    "error": null
+  },
+  "PSI-69": {
+    "last_checked_utc": "2026-11-15T05:12:42+00:00",
+    "state": "online",
+    "http_status": 200,
+    "page_sha256": "17da2747ec04bcd82ebd80a8173401941a476b947ce91b61a3c17a32195a8681",
+    "changed_since_last_successful_check": true,
+    "etag": "W/\"981-1794447238000\"",
+    "last_modified": "Thu, 12 Nov 2026 01:33:58 GMT",
+    "latest_version_visible": null,
+    "updated_date_visible": null,
+    "discoverable_files": [],
+    "error": null
+  }
+}

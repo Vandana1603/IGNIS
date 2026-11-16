@@ -35,7 +35,7 @@ def test_capabilities_no_llm_or_network(client):
 
 def test_status_uses_existing_catalog(client):
     p = client.get('/v6/status').json()
-    assert p['imported_record_count'] >= 6
+    assert p['imported_record_count'] == 6
     assert p['investigations'] == ['PSI-25', 'PSI-69']
     assert p['independent_nasa_verification'] == 'not_performed'
 
@@ -159,7 +159,7 @@ def test_unknown_record_id_abstains(client):
 def test_lexical_search_pmma_only_explicit_raw_values(client):
     p = query(client, 'Find PMMA records')
     assert p['mode'] == 'lexical_lookup'
-    assert {'PSI-25-B1', 'PSI-25-B10'}.issubset(set(p['source_record_ids']))
+    assert set(p['source_record_ids']) == {'PSI-25-B1', 'PSI-25-B4'}
     assert 'PSI-25-B3' not in p['source_record_ids']
 
 

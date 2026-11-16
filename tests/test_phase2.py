@@ -36,8 +36,8 @@ def test_expected_curated_subset_for_current_stage():
     records = get_records()
     ids = {r.id for r in records}
     assert {"PSI-25-B1", "PSI-25-B3", "PSI-25-B4"}.issubset(ids)
-    assert len(records) >= 6
-    if len(records) >= 6:
+    assert len(records) in (3, 6)
+    if len(records) == 6:
         assert {"PSI-69-20CAL08", "PSI-69-20CAL10", "PSI-69-20CAL12"}.issubset(ids)
 
 
@@ -108,7 +108,7 @@ def test_phase2_endpoints(client):
     assert status.status_code == 200
     assert status.json()["imported_record_count"] == len(get_records())
     r = client.get("/v2/experiments", params={"investigation": "PSI-25"})
-    assert r.status_code == 200 and len(r.json()) == len([x for x in get_records() if x.source_id == "PSI-25"])
+    assert r.status_code == 200 and len(r.json()) == 3
     missing = client.get("/v2/experiments/not-a-test")
     assert missing.status_code == 404
 

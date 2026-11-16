@@ -1,0 +1,126 @@
+{
+  "format": 1,
+  "base": "IGNIS 2.3 professional UI",
+  "changed_files": [
+    {
+      "path": "START_HERE_PHASE10.md",
+      "before_sha256": null,
+      "after_sha256": "08f726db43d69a8b52e5ac22d49ec7c4e70b63ba32475df27e79ce1cbd107737"
+    },
+    {
+      "path": "backend/main.py",
+      "before_sha256": "6b001d62ec9bca4c2eb9111e204caffce1838e3f2c562dd9fc95a59c37587875",
+      "after_sha256": "203bcef031a909741aa5e71471eba4ae166d221aea6c983d4ca430a8d2727bf4"
+    },
+    {
+      "path": "backend/phase10/__init__.py",
+      "before_sha256": null,
+      "after_sha256": "cd1f0457cbebcc48977a855e2413d20775562c48c2252e9a2e0dd4e44ed4cf1e"
+    },
+    {
+      "path": "backend/phase10/rag.py",
+      "before_sha256": null,
+      "after_sha256": "1ad9482721f5fd3c3834aafd304721326f184f293e8fea51f2069e9c8ec1d7b6"
+    },
+    {
+      "path": "backend/phase10/routes.py",
+      "before_sha256": null,
+      "after_sha256": "b982d0498387bbda421832b5b2711fcafec2c7fad2f83bca8866c948a0d2bb75"
+    },
+    {
+      "path": "backend/phase3/retrieval.py",
+      "before_sha256": "14f69b314d7ad11d047f33dd0752be73cebd749dcc0c1383122c87bfa0c32688",
+      "after_sha256": "ca7ae7f0c1b1a570a8a128d410867c9ce9dcd82fbb469df46d86bc75bb078a11"
+    },
+    {
+      "path": "backend/phase6/engine.py",
+      "before_sha256": "4cecd280e56732ddc44a1a0f77de5b3c4cba58f2fff3792f80bacb06a0a0a3ca",
+      "after_sha256": "bbe012d49b17dd9c8f01f335c95111302202d1c9724c0f1a2fd75ef24fe26c0f"
+    },
+    {
+      "path": "data/phase10/provenance.json",
+      "before_sha256": null,
+      "after_sha256": "c0fd1174312232e27aa161c014968cdf95294090635bb23ba92e0f564b21791b"
+    },
+    {
+      "path": "data/phase2/experiments.json",
+      "before_sha256": "4b8cb8ac0485da18a7ddf332574776875bd05e68445c348a40c7c29bcd7dcbcf",
+      "after_sha256": "ba4e38275580d3e29406a0cb73d9789bcf132551dedfa3588c6698bfbc03a18f"
+    },
+    {
+      "path": "data/phase2/import_manifest.json",
+      "before_sha256": "e8b24c29938ddda1be5a6ec64d1ddbff39975379fcf225411d1139a78b572a72",
+      "after_sha256": "95c8d3189046ae6b1fe38b69767fb5a95f2f02acdfa04a62303aaabbca7464a0"
+    },
+    {
+      "path": "data/phase2/raw/psi25_bass_ii_curated.csv",
+      "before_sha256": "6d590fd402ed69800c6fcd92dd6a2b6d3656bc427d7566435ca2f6aa2c75ceab",
+      "after_sha256": "5a8774fd89815bc8b2aad7a4c7f67beee4f7aec840ff65b7f3162f6bd89398e1"
+    },
+    {
+      "path": "docs/PHASE10_SCIENCE_AND_PROVENANCE.md",
+      "before_sha256": null,
+      "after_sha256": "2ba099b5ae46061b7b4371981d056dc682333ba47cc21232331bc63a702d27c8"
+    },
+    {
+      "path": "frontend/src/pages/Overview.tsx",
+      "before_sha256": "f9be350002006d9298ec740f65bf1493da0d2e84b745aa2ea24916eeaba5d440",
+      "after_sha256": "3cabf61a5e740fdb823ef2e01d071ce096717890a3bb70817e8cbc04e6086b07"
+    },
+    {
+      "path": "frontend/src/phase10/RagAssistant.tsx",
+      "before_sha256": null,
+      "after_sha256": "9effd60334fb049a3f02f871e248e2acc0a6a847a682fc95ed7ccef6803a3274"
+    },
+    {
+      "path": "frontend/src/phase10/rag.css",
+      "before_sha256": null,
+      "after_sha256": "4cf4c56a54fcf5fa17f8a17287c2358992603928f899098594e95a0c8a9c8cb7"
+    },
+    {
+      "path": "frontend/src/phase6/ScientificInsights.tsx",
+      "before_sha256": "8c4056ec527e385db6e8102d3d220e3a54f512d3294fdd5a818bccd3d6670e4d",
+      "after_sha256": "6e2cf89047ff17785bbbeecbd923db376e746d355892200c5be7a17f3ed0a3fc"
+    },
+    {
+      "path": "frontend/src/phase8/ResearchSync.tsx",
+      "before_sha256": "c8970ea520e9aa5f203ad24795dbb449539d2b0c6b888e4980eb63cb911b33c8",
+      "after_sha256": "01ec1746f4b4d5ec69a101d5fd2f4532ae669b6eae90c718ffe091dc0febdac1"
+    },
+    {
+      "path": "scripts/check_phase10.py",
+      "before_sha256": null,
+      "after_sha256": "834687830ab8557ded2943cda5e1423c2135409e8ec23d771144fc45d0b4950d"
+    },
+    {
+      "path": "scripts/extend_psi.py",
+      "before_sha256": null,
+      "after_sha256": "ae38ecb9ebeee2b8557a0c7c0d474e0726217ac7ffd267c463e5c1f63b54b59b"
+    },
+    {
+      "path": "tests/test_phase10.py",
+      "before_sha256": null,
+      "after_sha256": "1af69664a48ce7766b3ef12d37efff7e0466d41e1e0df249912923d2f2cfc03d"
+    },
+    {
+      "path": "tests/test_phase2.py",
+      "before_sha256": "15b9f59960386a7b00555bc45ebef385da26e1260d0a5b4c4ebdb6737d424079",
+      "after_sha256": "1d5525248b95bb7a66cc49645c6666a66f33dac339d399088599a5749842d343"
+    },
+    {
+      "path": "tests/test_phase3.py",
+      "before_sha256": "278160c4fdd9f5832f243d4197578e481ffdd70f2f69f4e6bd498727f78db614",
+      "after_sha256": "d4f0ff9aa7524c27eb59a526a26756eae9e3b852f60f5fdd96de8f87eccb0735"
+    },
+    {
+      "path": "tests/test_phase6.py",
+      "before_sha256": "96bd06970b9c886ae72026d1f4bcdad045f552cd237324118ff64bc5e03db44a",
+      "after_sha256": "e1f0279bb5d9a95abe3c156bf6e497def44a89092535e215c36b2e72ca752447"
+    },
+    {
+      "path": "tests/test_phase8.py",
+      "before_sha256": "9445ea2696dfea6cc58eb201bc53db51ee4301692bedca6347976bdec2d27c86",
+      "after_sha256": "977698be87ff90356c30b51bb132afa0c4113eb711428f359eedc536490800b9"
+    }
+  ]
+}

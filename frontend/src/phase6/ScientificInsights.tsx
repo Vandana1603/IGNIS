@@ -7,7 +7,6 @@ import { siApi } from './client';
 import { citationsResolve, evidenceFor, safeClaims } from './science';
 import type { AskResponse, GroundedClaim, SICapabilities } from './types';
 import './phase6.css';
-import { RagAssistant } from '../phase10/RagAssistant';
 
 const examples = [
   'What was the burn time of FLEX test 20CAL10?',
@@ -71,7 +70,6 @@ export function ScientificInsights() {
   return <div className="page-stack">
     <PageHeading eyebrow="SCIENTIFIC INTELLIGENCE / EVIDENCE FIRST" title="Evidence-Grounded SI"
       description="Ask about imported NASA PSI test records. Each supported observation links to its original source-table field and stable evidence ID."/>
-    <RagAssistant/>
     <Panel className="p6-query-panel">
       <form onSubmit={(event) => void submit(event)}>
         <label className="field-label" htmlFor="si-question">YOUR RESEARCH QUESTION</label>

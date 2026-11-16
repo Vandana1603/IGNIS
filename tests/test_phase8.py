@@ -61,7 +61,7 @@ def test_status_has_only_local_record_count_until_check(isolated):
     r = client.get('/v8/sync/status')
     assert r.status_code == 200
     body = r.json()
-    assert body['catalog_record_count'] >= 6
+    assert body['catalog_record_count'] == 6
     assert body['imported_from_remote_sync'] == 0
     assert all(s['state'] == 'not_checked' for s in body['sources'])
 
@@ -113,7 +113,7 @@ def test_stage_is_explicit_only_and_never_imports(isolated, monkeypatch):
     staged_file = sync.STAGED_DIR / result['filename']
     assert staged_file.read_bytes() == b'a,b\n1,2\n'
     assert result['sha256'] == hashlib.sha256(staged_file.read_bytes()).hexdigest()
-    assert client.get('/v2/status').json()['imported_record_count'] >= 6
+    assert client.get('/v2/status').json()['imported_record_count'] == 6
 
 
 def test_stage_rejects_unknown_or_invalid_artifact(isolated, monkeypatch):
@@ -196,7 +196,7 @@ def test_staged_csv_preview_matches_and_detects_differences(isolated):
     assert results['diffs'][1]['status'] == 'different_raw_values'
     assert results['diffs'][1]['changed_fields'][0]['column'] == 'Burn time; s'
     assert results['diffs'][2]['status'] == 'candidate_new_test_id'
-    assert client.get('/v2/status').json()['imported_record_count'] >= 6
+    assert client.get('/v2/status').json()['imported_record_count'] == 6
 
 
 def test_untrusted_preview_filename_rejected(isolated):

@@ -1,0 +1,69 @@
+/* IGNIS Phase 8: additive mission-control styling. No existing styles overwritten. */
+.phase8-stats { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px }
+.phase8-stats>div { display:flex;flex-direction:column;gap:7px;border:1px solid #23445b;border-radius:15px;padding:20px;background:linear-gradient(145deg,#10283d,#0a1b2e) }
+.phase8-stats svg { width:20px;height:20px;color:#78e3e8;margin-bottom:5px }
+.phase8-stats small { color:#8caabd;font-size:11px }
+.phase8-stats strong {font:600 30px 'Space Grotesk',sans-serif;color:#e7faff}
+.phase8-stats span {color:#6e94a8;font-size:10px;line-height:1.5}
+.phase8-source-grid { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:stretch }
+.phase8-source {height:100%}
+.phase8-source-top {display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.phase8-pill{display:inline-flex;align-items:center;gap:6px;border-radius:40px;padding:6px 10px;border:1px solid #426079;color:#a9bdc9;font-size:10px}
+.phase8-pill.online{background:#11372f;border-color:#326858;color:#85dfbf}
+.phase8-pill.unavailable{background:#392824;border-color:#70503e;color:#f1c39a}
+.phase8-source-facts {display:grid;gap:0;border-top:1px solid #233d52}
+.phase8-source-facts>div{padding:11px 0;display:flex;justify-content:space-between;align-items:start;gap:12px;border-bottom:1px solid #1e3348}
+.phase8-source-facts span{color:#85a4b8;font-size:11px;max-width:52%}
+.phase8-source-facts strong{color:#deeff8;text-align:right;font-size:11px;overflow-wrap:anywhere;max-width:55%}
+.phase8-actions {display:flex;flex-wrap:wrap;gap:9px}
+.phase8-artifacts h3{display:flex;align-items:center;gap:8px;color:#a6dcea;font-size:12px;font-weight:700;margin:0 0 13px}
+.phase8-artifacts{border-top:1px solid #243e50;padding-top:15px}
+.phase8-artifact{display:flex;gap:15px;justify-content:space-between;align-items:center;border:1px solid #234253;background:#102a3c;border-radius:10px;padding:10px;margin:9px 0}
+.phase8-artifact strong{display:block;color:#d6f4fc;font-size:11px;overflow-wrap:anywhere}
+.phase8-artifact small{display:block;color:#85a4b5;font-size:10px;margin-top:4px}
+.phase8-empty,.phase8-explain{font-size:12px;color:#87a9ba;line-height:1.7;margin:0}
+.phase8-error{padding:12px;border:1px solid #834d42;border-radius:10px;background:#3e2929;color:#f5c7a9;font-size:12px}
+.phase8-minor{margin:0}
+.phase8-staged{display:grid;gap:10px}
+.phase8-staged div{display:grid;gap:4px;padding:11px;background:#10293a;border:1px solid #29526c;border-radius:8px}
+.phase8-staged strong{font-size:11px;overflow-wrap:anywhere}
+.phase8-staged span{font-size:10px;color:#93b6c5;overflow-wrap:anywhere}
+.phase8-workflow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.phase8-workflow span{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:15px 11px;border:1px solid #2a5264;border-radius:9px;background:#102d3f;color:#d2e8f1;font-size:11px}
+.phase8-workflow svg{width:16px;color:#76dce9}
+.phase8-lab-head{display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:14px;padding:16px;border:1px solid #25475b;border-radius:14px;background:#0e263a}
+.phase8-lab-tabs{display:flex;gap:8px;flex-wrap:wrap}
+.phase8-lab-tabs button,.phase8-lab-buttons button{display:flex;align-items:center;gap:7px;padding:11px 13px;font-size:12px;font-weight:700;color:#a6c1d0;background:#102d42;border:1px solid #285067;border-radius:9px}
+.phase8-lab-tabs button.active,.phase8-lab-buttons button.active{background:#1c5864;border-color:#6bdce7;color:#ecfeff;box-shadow:inset 0 -2px 0 #7de5eb}
+.phase8-record-select{min-width:min(100%,290px);margin:0}
+.phase8-lab-layout{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(290px,.87fr);gap:18px}
+.phase8-schematic-panel,.phase8-evidence-panel{min-width:0;border:1px solid #234358;border-radius:16px;background:linear-gradient(145deg,#0d2638,#0b192b);padding:18px}
+.phase8-lab-strip{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:0 0 13px}
+.phase8-lab-strip>span{display:flex;gap:9px;align-items:center;font-size:10px;font-weight:700;letter-spacing:.13em;color:#9ad7e5}
+.phase8-schematic-svg{display:block;width:100%;height:auto;border-radius:12px;box-shadow:inset 0 0 0 1px #2b5165}
+.phase8-schematic-svg g[role="button"]:focus{outline:none;filter:drop-shadow(0 0 5px #69d8ea)}
+.phase8-lab-buttons{display:flex;flex-wrap:wrap;gap:9px;margin-top:17px}
+.phase8-lab-buttons button{font-size:11px;padding:9px 12px}
+.phase8-diagram-caveat{display:flex;align-items:start;gap:7px;color:#8eaab9;font-size:10px;line-height:1.6;margin:14px 0 0}
+.phase8-evidence-panel{display:flex;flex-direction:column;gap:15px}
+.phase8-evidence-panel h2{font:600 24px 'Space Grotesk',sans-serif;margin:0}
+.phase8-evidence-panel>p{font-size:12px;color:#a8bfca;line-height:1.75;margin:0}
+.phase8-selected-meta{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 12px;background:#0d2030;border:1px solid #23465c;border-radius:9px;padding:13px}
+.phase8-selected-meta span{font-size:10px;color:#809dac}
+.phase8-selected-meta strong{font-size:11px;color:#d6eef7;overflow-wrap:anywhere;text-align:right}
+.phase8-field-stack{display:grid;gap:8px;max-height:350px;overflow:auto}
+.phase8-field{display:grid;gap:5px;padding:11px;background:#0a1e30;border:1px solid #27445b;border-radius:9px}
+.phase8-field span{font-size:10px;color:#94aabb}
+.phase8-field strong{font-size:14px;color:#d9f7ff;overflow-wrap:anywhere}
+.phase8-field small{font:10px ui-monospace,monospace;color:#7ed5dc;overflow-wrap:anywhere}
+.phase8-evidence-panel>.button{white-space:normal;text-align:center}
+.phase8-lab-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:18px;align-items:start}
+.phase8-mission-steps{display:grid;gap:15px}
+.phase8-mission-steps>div{display:grid;grid-template-columns:40px minmax(0,1fr);gap:3px 12px;align-items:center}
+.phase8-mission-steps span{grid-row:span 2;display:grid;place-items:center;color:#70d5df;font:700 14px 'Space Grotesk',sans-serif;width:38px;height:38px;border:1px solid #2c6070;border-radius:10px;background:#123347}
+.phase8-mission-steps strong{font-size:12px;color:#d9f3fc}
+.phase8-mission-steps p{font-size:11px;color:#8da9b8;line-height:1.6;margin:0}
+.phase8-lab-cta{display:flex;flex-wrap:wrap;gap:9px}
+@media(max-width:1170px){.phase8-lab-layout{grid-template-columns:1fr}.phase8-evidence-panel{max-width:none}.phase8-lab-columns{grid-template-columns:1fr}.phase8-source-grid{grid-template-columns:1fr}}
+@media(max-width:720px){.phase8-stats{grid-template-columns:1fr}.phase8-workflow{grid-template-columns:1fr 1fr}.phase8-lab-head{align-items:stretch}.phase8-record-select{width:100%}.phase8-lab-tabs button{flex:1;justify-content:center}.phase8-schematic-panel,.phase8-evidence-panel{padding:13px}.phase8-schematic-svg{min-height:200px}.phase8-source-facts>div{flex-direction:column;gap:6px}.phase8-source-facts strong{max-width:100%;text-align:left}.phase8-source-facts span{max-width:100%}}
+@media(prefers-reduced-motion:reduce){.phase8-lab-tabs button,.phase8-lab-buttons button{transition:none}}
